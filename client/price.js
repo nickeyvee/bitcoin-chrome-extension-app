@@ -5,6 +5,6 @@ $.ajax({
     "url": marketData,
     "datatype": "JSON",
     success : function(data){
-        document.getElementById("btc").innerHTML(data.last);
+        $("#btc").html("$" + data.last);
         }
-})
+    })
