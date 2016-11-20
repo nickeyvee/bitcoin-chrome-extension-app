@@ -1,4 +1,3 @@
-window.onload(function(){
 var marketData = "https://api.bitcoinaverage.com/ticker/global/USD";
 
 $.ajax({
@@ -8,5 +7,4 @@ $.ajax({
     success : function(data){
         document.getElementById("btc").innerHTML(data.last);
         }
-    })
-})
+});
