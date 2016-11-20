@@ -7,4 +7,4 @@ $.ajax({
     success : function(data){
         document.getElementById("btc").innerHTML(data.last);
         }
-});
+})
