@@ -1,0 +1,34 @@
+body{
+	font-family: helvetica;
+	text-align: center;
+}
+.display{
+	padding: 5px;
+	font-size: 20px;
+}
+button{
+	background: white;
+	color: #DDDDDD;
+	width: 100px;
+	height: 25px;
+	margin-right: 0;
+	margin-left: 0;
+	outline: none;
+	border: 1px #DDDDDD solid;
+}
+.btc{
+	border-radius: 7px 0 0 7px;
+}
+.eth{
+	border-radius: 0 7px 7px 0;
+}
+button:hover{
+	transition: 0.5s;
+	color: grey;
+	border: 1px grey solid
+}
+button:focus{
+	border: 1px #0067C8 solid;
+	background: #3C90DF;
+	color: white;
+}
