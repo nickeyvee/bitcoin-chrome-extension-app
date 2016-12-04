@@ -1,0 +1,18 @@
+{
+"name":"bitcoin market data",
+"version": "1.0",
+"description":"Get the bitcoin price!",
+"manifest_version": 2,
+"permissions": [
+    "https://api.bitcoinaverage.com/"
+],
+"browser_action": {
+    "default_icon": "bitcoin-coin.png",
+    "default_popup":"popup.html"
+},
+"content_scripts": [ {
+    "css":  [ "popup.css"],
+    "js": [ "price.js", "jquery-3.1.1.min.js"],
+    "matches": [ "http://*/*", "https://*/*"]
+  }]
+}
