@@ -1,0 +1,42 @@
+body.btc-chrome {
+	font-family: helvetica;
+	font-size: 20px;
+	text-align: center;
+	min-width: 200px;
+}
+
+.btc-chrome .display {
+	padding: 5px;
+	font-size: 20px;
+}
+
+.btc-chrome button.btc-chrome-btn  {
+	background: white;
+	color: #DDDDDD;
+	width: 90px;
+	height: 22px;
+	margin-right: 0;
+	margin-left: 0;
+	outline: none;
+	border: 1px #DDDDDD solid;
+}
+
+.btc-chrome button.btc-chrome-btn:hover {
+	transition: 0.5s;
+	color: grey;
+	border: 1px grey solid
+}
+
+.btc-chrome button.btc-chrome-btn:focus {
+	border: 1px #0067C8 solid;
+	background: #3C90DF;
+	color: white;
+}
+
+.btc-chrome .btc {
+	border-radius: 7px 0 0 7px;
+}
+
+.btc-chrome .eth {
+	border-radius: 0 7px 7px 0;
+}

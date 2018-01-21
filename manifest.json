@@ -4,15 +4,16 @@
 "description":"Get the bitcoin price!",
 "manifest_version": 2,
 "permissions": [
-    "https://api.bitcoinaverage.com/"
+		"https://api.coinmarketcap.com/v1/ticker/",
+		"https://api.coinmarketcap.com/v1/ticker/bitcoin/",
+		"https://api.coinmarketcap.com/v1/ticker/ethereum/"
 ],
 "browser_action": {
     "default_icon": "bitcoin-coin.png",
     "default_popup":"popup.html"
 },
 "content_scripts": [ {
-    "css":  [ "popup.css"],
-    "js": [ "price.js", "jquery-3.1.1.min.js"],
+    "js": [ "/javascripts/index.js", "/javascripts/jquery-3.1.1.min.js"],
     "matches": [ "http://*/*", "https://*/*"]
   }]
 }
